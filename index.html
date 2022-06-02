@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Js 5th assignment</title>
+  </head>
+  <body class="vh-100">
+    <section class="bg-dark vh-100">
+      <div class="container-fluid bg-dark">
+        <div class="container py-4">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand d-flex" href="#">
+                <i class="fa-solid theme-color h1 pe-2 fa-cloud"></i>
+                <div class="">
+                  <h5 class="p-0 m-0">Weather</h5>
+                  <p class="p-0 m-0">tagline goes here</p>
+                </div>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link rounded-pill active"
+                      aria-current="page"
+                      href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link rounded-pill" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link rounded-pill" href="#">Live camaers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link rounded-pill" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link rounded-pill" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="background-image d-flex align-items-start">
+        <div
+          class="container p-0 d-flex mt-5 align-items-center position-relative"
+        >
+          <input
+            id="search"
+            class="form-control p-3 text-white border-0 bg-dark rounded-pill"
+            placeholder="Find your City"
+            type="text"
+          />
+          <button
+            id="find"
+            class="position-absolute end-0 me-2 btn px-5 py-2 rounded-pill btn-info"
+          >
+            Find
+          </button>
+          <div class="position-absolute list d-none w-25 top-100">
+            <ul class="list-unstyled bg-light shadow-lg ms-3 rounded-3"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="container text-white">
+        <div id="row" class="row translate-middle-y"></div>
+      </div>
+
+      <div class="box-color">
+        <div class="container py-5">
+          <div class="row bg-dangeralign-items-center">
+            <div class="col-lg-8 p-0 position-relative align-items-center d-flex">
+              <input
+                placeholder="Enter your Email here"
+                type="text"
+                class="border-0 form-control bg-dark rounded-pill"
+                name=""
+                id=""
+              />
+
+              <button
+                class="btn end-0 position-absolute rounded-pill btn-primary"
+              >
+                Subscipe
+              </button>
+            </div>
+
+            <div class="col-lg-4 text-center">
+              <ul class="list-unstyled m-0">
+                <li>
+                  <i class="fa-brands social-hover h1 me-4 theme-color fa-facebook"></i>
+                  <i class="fa-brands social-hover h1 me-4 theme-color fa-youtube"></i>
+                  <i class="fa-brands social-hover h1 me-4 theme-color fa-twitter"></i>
+                  <i class="fa-brands social-hover h1 me-4 theme-color fa-instagram"></i>
+                </li>
+              </ul>
+            </div>
+
+            
+          </div>
+          <label for="" class="form-label text-white mt-3"
+              >Copyright 2022 Company name. Created by Kareem. All rights
+              reserved</label
+            >
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box !important;
+}
+
+:root{
+    --theme-color :rgb(119, 119, 255) ; 
+}
+.theme-color{
+    color: var(--theme-color);
+}
+.background-image{
+    background-image: url(../imgs/banner.png);
+    height: 50vh;
+}
+.navbar-brand p{
+    font-size: 14px;
+}
+.nav-link{
+    margin-right: 10px;
+    padding: 5px 20px !important;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+.nav-link:hover{
+    border: 2px solid rgb(119, 119, 255);
+    color: rgb(94, 94, 255) !important;
+}
+.active{
+    border: 2px solid rgb(119, 119, 255);
+    color: rgb(94, 94, 255) !important;
+}
+.top
+{
+    background-color: #2D303D ;
+}
+.top-cetner{
+    background-color: #1c1e27;
+}
+.box-color{
+    background-color: #323544;
+}
+.statues{
+    color: var(--theme-color);
+}
+.box-center-color{
+    background-color: #21232b;
+}
+.background-image ul li:hover{
+    background-color: rgba(211, 211, 211, 0.933);
+    cursor: pointer;
+}
+.list{
+    z-index: 1200;
+}
+.large-font{
+    font-size: 4rem;
+}
+.social-hover{
+    transition: 0.3s;
+}
+.social-hover:hover{
+    color: rgb(59, 59, 184) ;
+}
