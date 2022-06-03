@@ -60,3 +60,6 @@
 .social-hover:hover {
   color: rgb(59, 59, 184);
 }
+#row{
+  transform: translateY(-50%);
+}
