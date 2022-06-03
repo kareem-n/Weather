@@ -31,9 +31,9 @@ search.addEventListener("keyup", async function () {
 
   for (var i = 0; i < items.length; i++) {
     items[i].addEventListener("click", function (e) {
-      var x = e.target ; 
-	  api(x.innerHTML) ; 
-	  list.classList.replace("d-block" , "d-none") ; 
+      var x = e.target;
+      api(x.innerHTML);
+      list.classList.replace("d-block", "d-none");
     });
   }
 });
@@ -53,9 +53,24 @@ function display(final) {
     "Saturday",
   ];
   var d = new Date();
+  
   var dayName = days[d.getDay()];
-  var nextDayName = days[d.getDay() + 1];
-  var nextDayName2 = days[d.getDay() + 2];
+  var nextDayName ; 
+  var nextDayName2 ; 
+  if( d.getDay() == 6 ){
+    nextDayName = days[0];
+    nextDayName2 = days[1] ; 
+  }
+  else if ( d.getDay() == 5 ){
+    nextDayName = days[6];
+    nextDayName2 = days[0] ; 
+  }
+  else{
+    nextDayName = days[d.getDay() +1] ; 
+    nextDayName2 = days[d.getDay() +2] ; 
+  }
+  
+  console.log(nextDayName2);
   const months = [
     "January",
     "February",
@@ -128,7 +143,9 @@ function display(final) {
 		  <p class="m-0">${
         final.forecast.forecastday[2].day.mintemp_c
       }<span>&#176;</span>c</p>
-		  <p class="statues my-3">${final.forecast.forecastday[2].day.condition.text}</p>
+		  <p class="statues my-3">${
+        final.forecast.forecastday[2].day.condition.text
+      }</p>
 		  </div>
 		</div>
  
