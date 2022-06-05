@@ -90,7 +90,7 @@ function display(final) {
   <div class="col-lg-4 box-color overflow-hidden p-0 rounded-3">
     <div class="top p-2 d-flex justify-content-between">
       <h6>${dayName}</h6>
-      <h6>${d.getDay()} ${month}</h6>
+      <h6>${d.getDate()} ${month}</h6>
     </div>
     <div class="p-4">
       <h5 class="my-2">${final.location.name}</h5>
